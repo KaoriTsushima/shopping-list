@@ -28,9 +28,7 @@ button {
 .weekly-shopping-list {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-gap: 20px;
 }
-.day-list li {
-  list-style-type: none;
+.day-list {
   text-align: left;
 }
