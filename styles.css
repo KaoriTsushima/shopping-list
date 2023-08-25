@@ -1,0 +1,36 @@
+body {
+  font-family: "Barlow", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: darkcyan;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#list {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.customiser-section {
+  margin-bottom: 20px;
+}
+
+.weekly-shopping-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 20px;
+}
+.day-list li {
+  list-style-type: none;
+  text-align: left;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Weekly Shopping List</h1>
+
+    <div class="customiser-section">
+      Day:
+      <select id="weekday" onchange="applyWeekday()">
+        <option>Monday</option>
+        <option>Tuesday</option>
+        <option>Wednesday</option>
+        <option>Thursday</option>
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+    </div>
+
+    <input type="text" id="userInput" placeholder="Enter your grocery" />
+    <button id="addButton">Add Grocery to List</button>
+    <button id="removeButton">Remove Grocery</button>
+    <div id="division"></div>
+
+    <!--Here is CSS grid !-->
+    <div class="weekly-shopping-list">
+      <div class="day-list">
+        <h3>Monday</h3>
+        <ul>
+          <li><input type="checkbox" />list items</li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h3>Tuesday</h3>
+        <ul>
+          <li><input type="checkbox" />list items</li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h3>Wednesday</h3>
+        <ul>
+          <li><input type="checkbox" />list items</li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h3>Thursday</h3>
+        <ul>
+          <li><input type="checkbox" />list items</li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h3>Friday</h3>
+        <ul>
+          <li><input type="checkbox" />list items</li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h3>Saturday</h3>
+        <ul>
+          <li><input type="checkbox" />list items</li>
+        </ul>
+      </div>
+      <div class="day-list">
+        <h3>Sunday</h3>
+        <ul>
+          <li><input type="checkbox" />list items</li>
+        </ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
