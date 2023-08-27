@@ -16,6 +16,10 @@ addButton.addEventListener("click", function () {
   const dayElement = document.getElementById(`${day}-items`);
   //   dayElement.appendChild()
 
+  const item_id = `${day}_${itemName}`;
+  dayElement.setAttribute("id", item_id);
+  // add item-id
+
   const divItem = document.createElement("p");
   //  divItem.textContent = text;
   const checkbox_label = document.createElement("label");
@@ -40,10 +44,13 @@ addButton.addEventListener("click", function () {
 });
 
 removeButton.addEventListener("click", function () {
-  const divItems = division.getElementsByTagName("p");
+  const day = document.getElementById("weekday").value.toLowerCase();
+  const dayElement = document.getElementById(`${day}-items`);
+
+  const divItems = dayElement.getElementsByTagName("p");
 
   if (divItems.length > 0) {
-    division.removeChild(divItems[divItems.length - 1]);
+    dayElement.removeChild(divItems[divItems.length - 1]);
   }
 });
 
